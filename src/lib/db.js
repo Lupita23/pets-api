@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // coneccion a la base de datos desde mongoose (atlas) //
-const connectionString = 'mongodb+srv://pets-api:petsapi@clusterguadalupe-ve7u6.mongodb.net/test?retryWrites=true&w=majority'
+const connectionString = 'mongodb+srv://pets-api:petsapi@clusterguadalupe-ve7u6.mongodb.net/pets?retryWrites=true&w=majority'
 
 const connect = () => new Promise((resolve, reject) => {
   mongoose.connect(connectionString, { useNewUrlParser: true }, (error) => {
